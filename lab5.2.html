@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        /* Fon rəngi və kənarlardakı boşluq */
         body { 
             background-color: #e0e0e0; 
             margin: 0; 
@@ -11,26 +10,22 @@
             font-family: sans-serif; 
         }
 
-        /* Kartların yığıldığı ana qutu */
         .container {
             display: flex;
-            flex-wrap: wrap; /* Sığmayanda aşağı keçsin */
+            flex-wrap: wrap; 
             justify-content: center; 
-            gap: 20px; /* Kartlar arası boşluq */
-            max-width: 1100px; /* Çox yayılmasın deyə */
-            margin: 0 auto; /* Ortada dursun */
+            gap: 20px; 
+            max-width: 1100px; 
+            margin: 0 auto; 
         }
-
-        /* Hər bir kart - 3-3 düzülməsi üçün 30% en verdik */
         .card {
             background: white;
             width: 30%; 
-            min-width: 280px; /* Balaca ekranlarda çox sıxılmasın */
+            min-width: 280px; 
             padding: 15px;
-            box-sizing: border-box; /* Padding-i enə daxil et */
+            box-sizing: border-box; 
         }
 
-        /* Şəkil və üzərindəki Click düyməsi */
         .img-box {
             position: relative;
             width: 100%;
@@ -54,7 +49,6 @@
             cursor: pointer;
         }
 
-        /* Alt yazıların (Məhsul və Qiymət) tənzimlənməsi */
         .info {
             display: flex;
             justify-content: space-between;
