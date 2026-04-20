@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        /* Fon rəngi və kənarlardakı boşluq */
+        body { 
+            background-color: #e0e0e0; 
+            margin: 0; 
+            padding: 40px; 
+            font-family: sans-serif; 
+        }
+
+        /* Kartların yığıldığı ana qutu */
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Sığmayanda aşağı keçsin */
+            justify-content: center; 
+            gap: 20px; /* Kartlar arası boşluq */
+            max-width: 1100px; /* Çox yayılmasın deyə */
+            margin: 0 auto; /* Ortada dursun */
+        }
+
+        /* Hər bir kart - 3-3 düzülməsi üçün 30% en verdik */
+        .card {
+            background: white;
+            width: 30%; 
+            min-width: 280px; /* Balaca ekranlarda çox sıxılmasın */
+            padding: 15px;
+            box-sizing: border-box; /* Padding-i enə daxil et */
+        }
+
+        /* Şəkil və üzərindəki Click düyməsi */
+        .img-box {
+            position: relative;
+            width: 100%;
+        }
+
+        .img-box img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .click-btn {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            cursor: pointer;
+        }
+
+        /* Alt yazıların (Məhsul və Qiymət) tənzimlənməsi */
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .price { color: #2ecc71; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="card">
+            <div class="img-box"><img src="https://picsum.photos/id/10/400/300"><button class="click-btn">Click</button></div>
+            <div class="info"><span>Məhsul 1</span><span class="price">10 AZN</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="https://picsum.photos/id/11/400/300"><button class="click-btn">Click</button></div>
+            <div class="info"><span>Məhsul 2</span><span class="price">15 AZN</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="https://picsum.photos/id/12/400/300"><button class="click-btn">Click</button></div>
+            <div class="info"><span>Məhsul 3</span><span class="price">20 AZN</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="https://picsum.photos/id/13/400/300"><button class="click-btn">Click</button></div>
+            <div class="info"><span>Məhsul 4</span><span class="price">10 AZN</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="https://picsum.photos/id/14/400/300"><button class="click-btn">Click</button></div>
+            <div class="info"><span>Məhsul 5</span><span class="price">15 AZN</span></div>
+        </div>
+
+        <div class="card">
+            <div class="img-box"><img src="https://picsum.photos/id/15/400/300"><button class="click-btn">Click</button></div>
+            <div class="info"><span>Məhsul 6</span><span class="price">20 AZN</span></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

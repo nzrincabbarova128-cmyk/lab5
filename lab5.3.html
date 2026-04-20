@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+        .xarici-pencere {
+            border: 1px solid #aaa;
+            padding: 20px;
+            width: 600px;
+        }
+        .margin-zonasi {
+            border: 1px dashed #999;
+            padding: 10px 0; 
+            text-align: center;
+        }
+        .border-zonasi {
+            background-color: #10a37f;
+            border: 2px solid #0a8f6d;
+            padding: 10px 0; 
+            margin: 10px 20px 20px 20px;
+            text-align: center;
+        }
+        .padding-zonasi {
+            background-color: #eeeeee;
+            border: 1px dashed #999;
+            padding: 10px 0;
+            margin: 0 20px; 
+            text-align: center;
+        }
+        .content-zonasi {
+            background-color: #f1f1f1;
+            border: 1px dashed #aaa;
+            padding: 30px; 
+            margin: 0 30px 10px 30px; 
+            text-align: center;
+        }
+        .yazi { display: block; margin-bottom: 5px; }
+        .border-zonasi .yazi { color: black; } 
+    </style>
+</head>
+<body>
+
+    <div class="xarici-pencere">
+        
+        <div class="margin-zonasi">
+            <span class="yazi">Margin</span>
+
+            <div class="border-zonasi">
+                <span class="yazi">Border</span>
+
+                <div class="padding-zonasi">
+                    <span class="yazi">Padding</span>
+
+                    <div class="content-zonasi">
+                        Content
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
